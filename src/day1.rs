@@ -36,10 +36,6 @@ impl WindowMeasure {
         self.third = Some(third);
     }
 
-    pub fn is_ready(&self) -> bool {
-        self.first.is_some() && self.second.is_some() && self.third.is_some()
-    }
-
     pub fn sum(&self) -> u32 {
         let mut sum = 0;
         if let Some(n) = self.first {
